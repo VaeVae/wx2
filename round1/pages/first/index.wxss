@@ -1,0 +1,15 @@
+/* pages/first/index.wxss */
+.firstContainer{
+  display: flex;
+  height: 100vh;
+  /* background-color: aqua; */
+  justify-content: space-around;
+  align-items:center;
+  flex-direction: column;
+
+}
+.Name1{
+  width:100rpx;
+  height:100rpx ;
+  background-color: pink;
+}

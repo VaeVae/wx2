@@ -1,0 +1,9 @@
+<!-- 自定义组件传参：这是子组件 -->
+<view>
+  <block wx:for="{{list}}" wx:key="index">
+    <view bindtap="handleSelect" data-index="{{index}}" class="item">
+      <checkbox checked="{{item.selected}}"></checkbox><text>{{item.name}}-{{item.age}}</text>
+    </view>
+  </block>
+
+</view>

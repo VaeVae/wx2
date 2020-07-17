@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/page1_demo/index",
+    "pages/login_demo/index",
+    "pages/first/index",
+    "pages/home/index",
+    "pages/login/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "backgroundColor":"#cecece",
+    "navigationBarBackgroundColor": "#06AB55",
+    "navigationBarTitleText": "达州污水",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  },
+  "sitemapLocation": "sitemap.json",
+  "component":true,
+  "debug":true,
+  "tabBar":{
+    "position":"top",
+    "list":[
+      {
+        "text":"home",
+        "pagePath":"pages/index/index"
+      },
+      {
+        "text":"log",
+        "pagePath":"pages/logs/logs"
+      }
+    ]
+  }
+
+}

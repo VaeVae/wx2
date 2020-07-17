@@ -1,0 +1,16 @@
+<!--pages/useComponent/index.wxml-->
+<!-- 自定义组件 -->
+<text>pages/useComponent/index.wxml</text>
+<view>使用自定义的组件</view>
+<view>----------------------组件1----------------</view>
+<myHeader>
+  <view>
+    这是自定义的组件的插槽内容
+  </view>
+</myHeader>
+<view>----------------------组件1----------------</view>
+<view>----------------------组件2----------------</view>
+<view>自定义组件传参</view>
+<comChuancan list="{{arr}}" bindrecCount="recCount"></comChuancan>
+  <view>{{checkedCount}}</view>
+<view>----------------------组件2----------------</view>

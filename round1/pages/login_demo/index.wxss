@@ -1,0 +1,19 @@
+/* pages/login_demo/index.wxss */
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding:20px;
+  box-sizing: border-box;
+}
+.header image{
+  width: 100px;
+  height: 100px;
+}
+.buttons{
+  width: 100%;
+}
+.buttons button{
+  margin-bottom: 10px;
+  width: 100%;
+}

@@ -1,0 +1,13 @@
+<!--pages/demo1/index.wxml-->
+<navigator url="../demo2/index">跳转到demo2</navigator>
+<!-- 跳转页面传值 -->
+<navigator url="../demo2/index?name=1">跳转传参1</navigator>
+<navigator url="../demo2/index?name=2">跳转传参2</navigator>
+<navigator url="../demo2/index" redirect>跳转之后不返回</navigator>
+
+<navigator url="../demo2/index" hover-class="gaoliang">跳转高亮</navigator>
+<navigator url="../demo2/index" hover-class="none">跳转没有高亮</navigator>
+
+<text class="hover-gaoliang">设置了cursor pointer的元素点击会有高亮</text>
+
+<button type='primary' bindtap="tiaozhuan">API跳转</button>

@@ -1,0 +1,47 @@
+<!--pages/first/index.wxml-->
+<!-- 绑定数据 通过数据来控制类名 -->
+<!-- <view class="firstContainer">
+  <text>
+    这是绑定数据实例
+  </text>
+  <view class="{{ controlClass }}"></view>
+  <text>{{ '字符串' }}</text>
+  <text>{{ 123 }}</text>
+  <text>{{ 123 + 321 }}</text>
+  <text>{{ 1 ? '三元运算符' : '三元运算符' }}</text> -->
+  <!-- 两个复选框都是选中状态：js中默认将string有值的都认为是true，可以通过使用mustache语法进行解析 -->
+  <!-- <checkbox checked="true"></checkbox>
+  <checkbox checked="false"></checkbox>
+  <checkbox checked="{{ false }}"></checkbox>
+</view> -->
+<!-- 列表数据渲染 wv:for 
+    wx:for绑定循环的列表，wx:key需要给一个key绑定一个项中的某一属性，item是每一项，全局中如果有item关键字，在循环中访问不到
+-->
+<!-- <view class="firstContainer">
+  <view wx:for='{{ arr }}' wx:key='name'>
+    <text>{{ item.name }}</text> - <text>{{ item.role }}</text> - <text>{{ item.hname }}</text>
+  </view> 
+</view> -->
+<!-- 绑定事件 bindtap-->
+<!-- <view class="firstContainer">
+  <button bindtap="buttonTab">点击</button>
+</view> -->
+
+<!-- 事件冒泡: 默认点击子元素一定会触发父元素的事件，所以要阻止冒泡使用 catchtap 代替bindtap-->
+<!-- <view class="firstContainer">
+  <view bindtap="outerFun" style="width:200px;height:200px;background-color:red;">
+    <view catchtap="innerFun" style="width:100px;height:100px;background-color:blue;">
+    </view>
+  </view>
+</view> -->
+
+<!-- 事件传参 -->
+<!-- <view class="firstContainer">
+  <button data-age='12' data-name='张三' bindtap="shijianchuancan">点击</button>
+</view> -->
+
+<!-- 单向数据流 -->
+<view class="firstContainer">
+  <input value="{{ msg }}" bindinput="inputHandle"/>
+  <text>{{ msg }}</text>
+</view>

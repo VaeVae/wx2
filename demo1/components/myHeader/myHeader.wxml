@@ -1,0 +1,5 @@
+<!-- 自定义组件的结构 -->
+<view class="inner">
+  {{innerText}}
+  <slot></slot>
+</view>

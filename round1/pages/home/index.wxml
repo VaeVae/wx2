@@ -1,0 +1,41 @@
+<!--pages/home/index.wxml-->
+<view class="home_box">
+	<!-- 内容区域 -->
+	<scroll-view class="home_content" scroll-y>
+		<view>
+			<map class="home_content" id="map" longitude="107.477345" latitude="31.2238430000001" scale="8" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location>
+			</map>
+		</view>
+	</scroll-view>
+	<!-- 点击地图标记显示对应的详情内容 -->
+	<van-popup show="{{ showMakerDetail }}" closeable position="bottom" custom-style="height: 35%" bind:close="closeMarkerDetail">
+		<!-- {{currentMarkerInfo.}} -->
+		<view class='markerInfoBox' >
+			<view class="markerInfo">
+        <text class="markerInfoTitle">名称：</text>{{currentMarkerInfo.marker_name}}
+			</view>
+			<view class="markerInfo">
+        <text class="markerInfoTitle">状态：</text>{{currentMarkerInfo.marker_type}}
+			</view>
+			<view class="markerInfo">
+        <text class="markerInfoTitle">区域：</text>{{currentMarkerInfo.county_name}}
+			</view>
+			<view class="markerInfo">
+        <text class="markerInfoTitle">截污管长：</text>{{currentMarkerInfo.pipe_len}}
+			</view>
+			<view class="markerInfo">
+        <text class="markerInfoTitle">运营成本：</text>{{currentMarkerInfo.year_cost}}
+			</view>
+			<view class="markerInfo">
+        <text class="markerInfoTitle">服务人口：</text>{{currentMarkerInfo.service_nums}}
+			</view>
+		</view>
+	</van-popup>
+	<!-- 底部tabbar区域 -->
+	<!-- <van-tabbar active="{{ active }}" bind:change="onChange" active-color="#07c160" inactive-color="#000">
+		<van-tabbar-item name='zonghe' icon="home-o">综合</van-tabbar-item>
+		<van-tabbar-item name='shebei' icon="cluster-o">设备</van-tabbar-item>
+		<van-tabbar-item name='baojing' icon="bulb-o">报警</van-tabbar-item>
+		<van-tabbar-item name='tongji' icon="chart-trending-o">统计</van-tabbar-item>
+	</van-tabbar> -->
+</view>

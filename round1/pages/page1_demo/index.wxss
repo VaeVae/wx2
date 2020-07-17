@@ -1,0 +1,36 @@
+/* pages/page1_demo/index.wxss */
+.container{
+  /* width: 100vw;
+  height: 100vh; */
+  width: 750rpx;
+  /* background-color: aqua; */
+  height: 100vh;
+}
+.pro{
+  width: 300rpx;
+}
+/* flex布局 */
+.box,.box2{
+  display:flex;
+  border:1px solid red;
+  height:400rpx;
+  width: 100vw;
+}
+.box_left{
+  width: 100px;
+  background-color: aqua;
+}
+.box2_left{
+  width: 100px;
+  background-color: aqua;
+}
+.box_right{
+  /*  */
+  flex:1;
+background-color: pink;
+}
+.box2_right{
+  /*  */
+  flex:1;
+background-color: blue;
+}

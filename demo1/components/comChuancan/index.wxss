@@ -1,0 +1,4 @@
+/* components/comChuancan/index.wxss */
+.item{
+  margin:5px;
+}

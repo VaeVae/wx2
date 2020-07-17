@@ -1,0 +1,10 @@
+/* pages/demo1/index.wxss */
+
+.gaoliang{
+  color:red
+}
+
+.hover-gaoliang{
+  /* cursor: pointer 被认为可以点击的，所以点击的时候会有高亮 */
+  cursor: pointer;
+}

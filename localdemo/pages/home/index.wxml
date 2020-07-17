@@ -1,0 +1,43 @@
+<view class="Home">
+  <!--  -->
+  <swiper class="swiper">
+    <swiper-item>
+      <image></image>
+      <text>1</text>
+    </swiper-item>
+    <swiper-item>
+      <image></image>
+      <text>2</text>
+    </swiper-item>
+    <swiper-item>
+      <image></image>
+      <text>3</text>
+    </swiper-item>
+  </swiper>
+  <!--  -->
+  <view>
+    <view class="item">
+      <image></image>
+      <text>g1</text>
+    </view>
+    <view class="item">
+      <image></image>
+      <text>g2</text>
+    </view>
+    <view class="item">
+      <image></image>
+      <text>g3</text>
+    </view>
+  </view>
+  <!--  -->
+  <view>
+    <view>
+      <image></image>
+      <text>f1</text>
+    </view>
+    <view>
+      <image></image>
+      <text>f2</text>
+    </view>
+  </view>
+</view>

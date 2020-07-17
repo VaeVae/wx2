@@ -1,0 +1,33 @@
+<!--pages/login_demo/index.wxml-->
+  <!-- 普通的写法 -->
+  <!-- <view class="container">
+    <view class="header">
+      <image src="../../resource/logo.png"/>
+    </view>
+    <view class="inputs">
+      <input class="weui-input" data-type='username' placeholder="请输入用户名" value="{{ username }}" bindinput="inputChange"/>
+      <input class="weui-input" data-type='password' placeholder="请输入密码" type='password' value="{{ password }}" bindinput="inputChange"/>
+    </view>
+    <view class="buttons">
+      <button catchtap="login" type="primary">登录</button>
+      <button>注册</button>
+    </view>
+  </view> -->
+
+  <!-- 表单方式 -->
+<form bindsubmit="submit">
+  <view class="container">
+    <view class="header">
+      <image src="../../resource/logo.png"/>
+    </view>
+    <view class="inputs">
+      <input class="weui-input" auto-focus placeholder="将会获取焦点"/>
+      <input name='username' placeholder="请输入用户名" value="{{ username }}" />
+      <input name='password' placeholder="请输入密码" type='password' value="{{ password }}" />
+    </view>
+    <view class="buttons">
+      <button type="primary" form-type="submit">登录</button>
+      <button type="default">注册</button>
+    </view>
+  </view>
+</form>

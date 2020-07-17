@@ -1,0 +1,21 @@
+/* pages/home/index.wxss */
+.home_box{
+  width: 100vw;
+  height: 100vh;
+}
+
+.home_content{
+  width: 100vw;
+  height: calc( 100vh - 50px);
+}
+
+/* 地图弹窗样式 */
+.markerInfoBox{
+  font-size: small;
+  padding:16px;
+  color:#909098
+}
+
+.markerInfo{
+  margin-bottom: 6px;
+}

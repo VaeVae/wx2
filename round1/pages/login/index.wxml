@@ -1,0 +1,29 @@
+<!--pages/login/index.wxml-->
+<view class="login_box">
+  <van-cell-group class='input_box'>
+    <van-field required maxlength='13' clearable	
+      model:value="{{ username }}"
+      left-icon="user-o"
+      placeholder="请输入用户名"
+    />
+    <van-field required clearable
+      model:value="{{ password }}" 
+      left-icon="goods-collect-o" password="{{hidepassword}}"
+      placeholder="请输入密码" maxlength='13'
+    >
+      <van-icon slot="right-icon" name="{{pw_icon_close}}" bindtap="showPwd"/>
+    </van-field>
+    <van-field required clearable	
+      model:value="{{ vcode }}"
+      left-icon="edit"  maxlength='4'
+      placeholder="请输入验证码"
+    >
+        <van-image  slot="button" width="100" height="30" src="{{verify_image}}" bindtap="getCode"/>
+    </van-field>
+    <van-toast id="van-toast" />
+    <!-- <navigator url='/pages/home/index' redirect="true"> -->
+      <van-button size='medium' type="primary" bindtap="login_submit">登录</van-button>
+    <!-- </navigator> -->
+  </van-cell-group>
+  <van-notify id="van-notify" />
+</view>
